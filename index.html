@@ -1,271 +1,353 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Eagle Lift</title>
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Eagle Lift</title>
 
+		<link
+			rel="stylesheet"
+			href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+		/>
 
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+		<link
+			rel="stylesheet"
+			href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+		/>
 
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
+		<link rel="stylesheet" href="style.css" />
+	</head>
+	<body>
+		<header class="header">
+			<a href="#" class="logo"> <span>EAGLE</span>LIFT </a>
 
-    <link rel="stylesheet" href="style.css">
-</head>
-<body>
-    
-    <header class="header">
-        <a href="#" class="logo"> <span>EAGLE</span>LIFT </a>
+			<div id="menu-btn" class="fa fa-bars"></div>
 
-        <div id="menu-btn" class="fa fa-bars"></div>
+			<nav class="navbar">
+				<a href="#home">home</a>
+				<a href="#about">about</a>
+				<a href="#events">events</a>
+				<a href="#workouts">workouts</a>
+				<a href="#occupancy">occupancy and check in</a>
+			</nav>
+		</header>
 
-        <nav class="navbar">
-            <a href="#home">home</a>
-            <a href="#about">about</a>
-            <a href="#events">events</a>
-            <a href="#occupancy">occupancy</a>
-            <a href="#checkin">check in</a>
-        </nav>
+		<section class="home" id="home">
+			<div class="swiper home-slider">
+				<div class="swiper-wrapper">
+					<div
+						class="swiper-slide slide"
+						style="background: url(images/home-bg-1.jpg)"
+					>
+						<div class="content">
+							<span>your UNT rec center companion</span>
+							<h3>A Healthy body equals a healthy mind.</h3>
+							<a href="#" class="btn">get started</a>
+						</div>
+					</div>
 
-    </header>
+					<div
+						class="swiper-slide slide"
+						style="background: url(images/home-bg-2.jpg)"
+					>
+						<div class="content">
+							<span>your UNT rec center companion</span>
+							<h3>A Healthy body equals a healthy mind.</h3>
+							<a href="#" class="btn">get started</a>
+						</div>
+					</div>
 
-    <section class="home" id="home">
+					<div
+						class="swiper-slide slide"
+						style="background: url(images/home-bg-3.jpg)"
+					>
+						<div class="content">
+							<span>your UNT rec center companion</span>
+							<h3>A Healthy body equals a healthy mind.</h3>
+							<a href="#" class="btn">get started</a>
+						</div>
+					</div>
+				</div>
 
-        <div class="swiper home-slider">
+				<div class="swiper-pagination"></div>
+			</div>
+		</section>
 
-            <div class="swiper-wrapper">
-                
-                <div class="swiper-slide slide" style="background: url(images/home-bg-1.jpg);">
-                    <div class="content">
-                        <span>your UNT rec center companion</span>
-                        <h3>A Healthy body equals a healthy mind.</h3>
-                        <a href="#" class="btn">get started</a>
-                    </div>
-                </div>
+		<section class="about" id="about">
+			<div class="image">
+				<img src="images/about-img.jpg" alt="" />
+			</div>
 
-                <div class="swiper-slide slide" style="background: url(images/home-bg-2.jpg);">
-                    <div class="content">
-                        <span>your UNT rec center companion</span>
-                        <h3>A Healthy body equals a healthy mind.</h3>
-                        <a href="#" class="btn">get started</a>
-                    </div>
-                </div>
+			<div class="content">
+				<span>about us</span>
+				<h3 class="title">Every day is a chance to become better</h3>
+				<p>
+					Welcome to Eagle Lift! We're your hub for fitness, sports, and
+					wellness on campus, offering top-notch facilities and programs to help
+					you thrive physically and socially during your college journey at UNT.
+				</p>
+				<div class="box-container">
+					<div class="box">
+						<h3><i class="fas fa-check"></i>improved focus</h3>
+						<p>
+							Regular exercise boosts cognitive function, helping students stay
+							alert and focused during classes and study sessions.
+						</p>
+					</div>
+					<div class="box">
+						<h3><i class="fas fa-check"></i>stress relief</h3>
+						<p>
+							Gym sessions provide an outlet for releasing tension and stress,
+							promoting better mental well-being and reducing anxiety levels.
+						</p>
+					</div>
+					<div class="box">
+						<h3><i class="fas fa-check"></i>enhanced mood</h3>
+						<p>
+							Exercise triggers the release of endorphins, chemicals in the
+							brain that act as natural mood lifters, fostering a positive
+							outlook on academic and personal challenges.
+						</p>
+					</div>
+					<div class="box">
+						<h3><i class="fas fa-check"></i>better sleep</h3>
+						<p>
+							Physical activity promotes deeper and more restful sleep,
+							essential for academic performance and overall health.
+						</p>
+					</div>
+				</div>
+				<a href="#" class="btn">read more</a>
+			</div>
+		</section>
 
-                <div class="swiper-slide slide" style="background: url(images/home-bg-3.jpg);">
-                    <div class="content">
-                        <span>your UNT rec center companion</span>
-                        <h3>A Healthy body equals a healthy mind.</h3>
-                        <a href="#" class="btn">get started</a>
-                    </div>
-                </div>
-            </div>
+		<section class="events" id="events">
+			<h1 class="heading"><span>rec events</span></h1>
 
-            <div class="swiper-pagination"></div>
+			<div class="box-container">
+				<div class="box">
+					<div class="image">
+						<a href="https://bit.ly/4ajIgYk">
+							<img src="images/event1.png" />
+						</a>
+					</div>
+				</div>
+				<div class="box">
+					<div class="image">
+						<a href="https://bit.ly/3zjjNld">
+							<img src="images/event2.png" />
+						</a>
+					</div>
+				</div>
+				<div class="box">
+					<div class="image">
+						<a href="https://bit.ly/3rY062d">
+							<img src="images/event3.png" />
+						</a>
+					</div>
+				</div>
+				<div class="box">
+					<div class="image">
+						<a href="https://bit.ly/3J7sTX1">
+							<img src="images/event4.png" />
+						</a>
+					</div>
+				</div>
+				<div class="box">
+					<div class="image">
+						<a href="https://bit.ly/3vEja7G">
+							<img src="images/event5.png" />
+						</a>
+					</div>
+				</div>
+				<div class="box">
+					<div class="image">
+						<a href="https://bit.ly/3xx9DzR">
+							<img src="images/event6.png" />
+						</a>
+					</div>
+				</div>
+				<div class="box">
+					<div class="image">
+						<a href="https://bit.ly/3xBq0eI">
+							<img src="images/event7.png" />
+						</a>
+					</div>
+				</div>
+				<div class="box">
+					<div class="image">
+						<a href="https://bit.ly/4aRgHWb">
+							<img src="images/event8.png" />
+						</a>
+					</div>
+				</div>
+			</div>
+		</section>
 
-        </div>
-    </section>
+		<section class="workouts" id="workouts">
+			<h1 class="heading"><span>workouts</span></h1>
 
-    <section class="about" id="about">
+			<div class="box-container">
+				<div class="box">
+					<div class="image">
+						<img src="images/workout3.jpg" />
+					</div>
+					<div class="content">
+						<img src="images/icon1.png" />
+						<h3>full body</h3>
+						<p>
+							Our Full Body Workouts provide a diverse range of exercises
+							targeting all major muscle groups, catering to all fitness levels
+							and helping you achieve comprehensive strength and conditioning.
+						</p>
+						<a href="./FullBody.html" class="btn">read more</a>
+					</div>
+				</div>
 
-        <div class="image">
-            <img src="images/about-img.jpg" alt="">
-        </div>
+				<div class="box second">
+					<div class="image">
+						<img src="images/workout2.jpg" />
+					</div>
+					<div class="content">
+						<img src="images/icon2.png" />
+						<h3>for women</h3>
+						<p>
+							Our Workouts for Women section offers a curated selection of
+							exercises tailored to women's fitness goals, focusing on strength,
+							toning, and empowerment through targeted routines designed to
+							enhance overall well-being and confidence.
+						</p>
+						<a href="./ForWomen.html" class="btn">read more</a>
+					</div>
+				</div>
 
-        <div class="content">
-            <span>about us</span>
-            <h3 class="title">Every day is a chance to become better</h3>
-            <p>Welcome to Eagle Lift! We're your hub for fitness, sports, and wellness on campus, offering top-notch facilities
-                 and programs to help you thrive physically and socially during your college journey at UNT.</p>
-                <div class="box-container">
-                    <div class="box">
-                        <h3><i class="fas fa-check"></i>improved focus</h3>
-                        <p>Regular exercise boosts cognitive function, helping students stay alert and focused during classes and study sessions.</p>
-                    </div>
-                    <div class="box">
-                        <h3><i class="fas fa-check"></i>stress relief</h3>
-                        <p>Gym sessions provide an outlet for releasing tension and stress, promoting better mental well-being and reducing anxiety levels.</p>
-                    </div>
-                    <div class="box">
-                        <h3><i class="fas fa-check"></i>enhanced mood</h3>
-                        <p>Exercise triggers the release of endorphins, chemicals in the brain that act as natural mood lifters, fostering a positive outlook on academic and personal challenges.</p>
-                    </div>
-                    <div class="box">
-                        <h3><i class="fas fa-check"></i>better sleep</h3>
-                        <p>Physical activity promotes deeper and more restful sleep, essential for academic performance and overall health.</p>
-                    </div>
-                </div>
-                <a href="#" class="btn">read more</a>
-        </div>
-    </section>
+				<div class="box">
+					<div class="image">
+						<img src="images/workout1.jpg" />
+					</div>
+					<div class="content">
+						<img src="images/icon3.png" />
+						<h3>upper body</h3>
+						<p>
+							Our Upper Body Workouts feature a specialized collection of
+							exercises designed to sculpt and strengthen the arms, shoulders,
+							chest, and back, providing tailored routines to enhance upper body
+							strength and definition for women of all fitness levels.
+						</p>
+						<a href="./UpperBody.html" class="btn">read more</a>
+					</div>
+				</div>
+			</div>
+		</section>
 
-    <section class="events" id="events">
+		<section class="reviews" id="reviews"></section>
 
-        <h1 class="heading"><span>rec events</span></h1>
+		<section class="occupancy" id="occupancy">
+			<h1 class="heading"><span>occupancy</span></h1>
+			<div class="counting">0</div>
+			<h2>people at the gym</h2>
 
-        <div class="box-container">
+			<div class="container">
+				<h1>Click these buttons to check in and out of the rec center</h1>
+				<div class="button-container">
+					<button id="checkInButton">Check In</button>
+					<button id="checkOutButton">Check Out</button>
+				</div>
+			</div>
+		</section>
 
-            <div class="box">
-                <div class="image">
-                    <a href="https://bit.ly/4ajIgYk">
-                        <img src="images/event1.png">
-                    </a>
-                </div>
-            </div>
-            <div class="box">
-                <div class="image">
-                    <a href="https://bit.ly/3zjjNld">
-                        <img src="images/event2.png">
-                    </a>
-                </div>
-            </div>
-            <div class="box">
-                <div class="image">
-                    <a href="https://bit.ly/3rY062d">
-                        <img src="images/event3.png">
-                    </a>
-                </div>
-            </div>
-            <div class="box">
-                <div class="image">
-                    <a href="https://bit.ly/3J7sTX1">
-                        <img src="images/event4.png">
-                    </a>
-                </div>
-            </div>
-            <div class="box">
-                <div class="image">
-                    <a href="https://bit.ly/3vEja7G">
-                        <img src="images/event5.png">
-                    </a>
-                </div>
-            </div>
-            <div class="box">
-                <div class="image">
-                    <a href="https://bit.ly/3xx9DzR">
-                        <img src="images/event6.png">
-                    </a>
-                </div>
-            </div>
-            <div class="box">
-                <div class="image">
-                    <a href="https://bit.ly/3xBq0eI">
-                        <img src="images/event7.png">
-                    </a>
-                </div>
-            </div>
-            <div class="box">
-                <div class="image">
-                    <a href="https://bit.ly/4aRgHWb">
-                        <img src="images/event8.png">
-                    </a>
-                </div>
-            </div>
-        </div>
+		<section class="footer" id="footer">
+			<div class="box-container">
+				<div class="box">
+					<h3>quick links</h3>
+					<a class="links" href="#home">home</a>
+					<a class="links" href="#about">about</a>
+					<a class="links" href="#events">events</a>
+					<a class="links" href="#occupancy">occupancy</a>
+					<a class="links" href="#checkin">check in</a>
+				</div>
 
-    </section>
+				<div class="box">
+					<h3>opening hours</h3>
+					<p>sunday : <i> 12:00 PM - 12:00 AM </i></p>
+					<p>monday : <i> 6:00 AM - 12:00 AM </i></p>
+					<p>tuesday : <i> 6:00 AM - 12:00 AM </i></p>
+					<p>wednesday : <i> 6:00 AM - 12:00 AM </i></p>
+					<p>thursday : <i> 6:00 AM - 12:00 AM </i></p>
+					<p>friday : <i> 6:00 AM - 10:00 PM </i></p>
+					<p>saturday : <i> 10:00 AM - 7:00 PM </i></p>
+				</div>
 
-    <section class="workouts" id="reviews">
+				<div class="box">
+					<h3>opening hours</h3>
+					<p><i class="fas fa-phone"></i>940-565-2275</p>
+					<p><i class="fas fa-envelope"></i>recsports@unt.edu</p>
+					<p><i class="fas fa-map"></i>Denton, TX</p>
+					<div class="share">
+						<a href="#" class="fab fa-facebook-f"></a>
+						<a href="#" class="fab fa-twitter"></a>
+						<a href="#" class="fab fa-linkedin"></a>
+						<a href="#" class="fab fa-pinterest"></a>
+					</div>
+				</div>
 
-        <h1 class="heading"><span>workouts</span></h1>
+				<div class="box">
+					<h3>newsletter</h3>
+					<p>subscribe for latest updates</p>
+					<form action="">
+						<input
+							type="email"
+							class="email"
+							placeholder="enter your email"
+							id=""
+						/>
+						<input type="submit" value="subscribe" class="btn" />
+					</form>
+				</div>
+			</div>
+		</section>
 
-        <div class="box-container">
+		<div class="credit">
+			created by <span>group 5</span> | all rights reserved
+		</div>
 
-            <div class="box">
-                <div class="image">
-                    <img src="images/workout3.jpg">
-                </div>
-                <div class="content">
-                    <img src="images/icon1.png">
-                    <h3>full body</h3>
-                    <p>Our Full Body Workouts provide a diverse range of exercises targeting all major muscle groups,
-                         catering to all fitness levels and helping you achieve comprehensive strength and conditioning.</p>
-                    <a href="#" class="btn">read more</a>
-                </div>
-            </div>
+		<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
 
-            <div class="box second">
-                <div class="image">
-                    <img src="images/workout2.jpg">
-                </div>
-                <div class="content">
-                    <img src="images/icon2.png">
-                    <h3>for women</h3>
-                    <p>Our Workouts for Women section offers a curated selection of exercises tailored to women's fitness goals,
-                         focusing on strength, toning, and empowerment through targeted routines designed to enhance overall well-being and confidence.</p>
-                    <a href="#" class="btn">read more</a>
-                </div>
-            </div>
+		<script src="script.js"></script>
 
-            <div class="box">
-                <div class="image">
-                    <img src="images/workout1.jpg">
-                </div>
-                <div class="content">
-                    <img src="images/icon3.png">
-                    <h3>upper body</h3>
-                    <p>Our Upper Body Workouts feature a specialized collection of exercises designed to sculpt and strengthen the arms,
-                         shoulders, chest, and back, providing tailored routines to enhance upper body strength and definition for women of all fitness levels.</p>
-                    <a href="#" class="btn">read more</a>
-                </div>
-            </div>
-        </div>
+		...
+		<script>
+			const actions = Array.from(document.querySelectorAll("[data-action]"));
+		</script>
 
-    </section>
+		<script>
+			document.addEventListener("DOMContentLoaded", function () {
+				// Retrieve the counter value from localStorage or set it to 0 if not present
+				let counter = parseInt(localStorage.getItem("counter")) || 0;
+				updateCounter();
 
-    <section class="reviews" id="workouts">
+				// Function to update the counter value and save it to localStorage
+				function updateCounter() {
+					document.querySelector(".counting").innerText = counter;
+					localStorage.setItem("counter", counter);
+				}
 
-    </section>
+				// Event listener for the Check In button
+				document
+					.getElementById("checkInButton")
+					.addEventListener("click", function () {
+						counter++;
+						updateCounter();
+					});
 
-    <section class="footer" id="footer">
-
-        <div class="box-container">
-            <div class="box">
-                <h3>quick links</h3>
-                <a class="links" href="#home">home</a>
-                <a class="links" href="#about">about</a>
-                <a class="links" href="#events">events</a>
-                <a class="links" href="#occupancy">occupancy</a>
-                <a class="links" href="#checkin">check in</a>
-            </div>
-
-            <div class="box">
-                <h3>opening hours</h3>
-                <p> sunday : <i> 12:00 PM - 12:00 AM </i> </p>
-                <p> monday : <i> 6:00 AM - 12:00 AM </i> </p>
-                <p> tuesday : <i> 6:00 AM - 12:00 AM </i> </p>
-                <p> wednesday : <i> 6:00 AM - 12:00 AM </i> </p>
-                <p> thursday : <i> 6:00 AM - 12:00 AM </i> </p>
-                <p> friday : <i> 6:00 AM - 10:00 PM </i> </p>
-                <p> saturday : <i> 10:00 AM - 7:00 PM </i> </p>
-            </div>
-
-            <div class="box">
-                <h3>opening hours</h3>
-                <p><i class="fas fa-phone"></i>940-565-2275</p>
-                <p><i class="fas fa-envelope"></i>recsports@unt.edu</p>
-                <p><i class="fas fa-map"></i>Denton, TX</p>
-                <div class="share">
-                    <a href="#" class="fab fa-facebook-f"></a>
-                    <a href="#" class="fab fa-twitter"></a>
-                    <a href="#" class="fab fa-linkedin"></a>
-                    <a href="#" class="fab fa-pinterest"></a>
-                </div>
-            </div>
-
-            <div class="box">
-                <h3>newsletter</h3>
-                <p>subscribe for latest updates</p>
-                <form action="">
-                    <input type="email" class="email" placeholder="enter your email" id="">
-                    <input type="submit" value="subscribe" class="btn">
-                </form>
-            </div>
-    </section>
-
-    <div class="credit">created by <span>group 5</span> | all rights reserved</div>
-
-    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
-
-    <script src="script.js"></script>
-</body>
+				// Event listener for the Check Out button
+				document
+					.getElementById("checkOutButton")
+					.addEventListener("click", function () {
+						counter = Math.max(0, counter - 1);
+						updateCounter();
+					});
+			});
+		</script>
+	</body>
 </html>
