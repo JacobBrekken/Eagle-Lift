@@ -45,6 +45,32 @@ section {
     padding: 5rem 9%;
 }
 
+.heading{
+    text-align: center;
+    margin-bottom: 2rem;
+    position: relative;
+
+    &::before{
+        content: '';
+        position: absolute;
+        top: 50%; left: 0;
+        transform: translateY(-50%);
+        height: .1rem;
+        width: 100%;
+        background: #aaa;
+        z-index: -1;
+    }
+
+    span{
+        font-size: 2rem;
+        color: #00853E;
+        background: #000;
+        padding: .5rem, 1.5rem;
+        border: .1rem solid #aaa;
+        border-radius: .5rem;
+    }
+}
+
 .btn{
     margin-top: 1rem;
     display: inline-block;
@@ -67,6 +93,7 @@ section {
     align-items: center;
     justify-content: space-between;
     padding: 0 9%;
+    z-index: 10000;
     background: #000;
     
     .logo{
@@ -114,7 +141,7 @@ section {
             width: 60rem;
 
             span{
-                font-size: 2rem;
+                font-size: 3rem;
                 color: #00853E;
                 display: block;
             }
@@ -136,6 +163,109 @@ section {
 
     &.swiper-pagination-bullet-active{
         background: #00853E;
+    }
+}
+
+.about{
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 8rem;
+
+    .image{
+        flex: 1 1 42rem;
+        position: relative;
+
+        &::before,
+        &::after{
+            content: '';
+            position: absolute;
+            z-index: -1;    
+            background: #00853E;
+            height: 15rem;
+            width: 15rem;
+        }
+
+        &::before{
+            top: 0; left: 0;
+        }
+
+        &::after{
+            bottom: 0; right: 0;
+        }
+
+        img{
+            width: 100%;
+            padding: 2rem;
+        }
+    }
+
+    .content{
+        flex: 1 1 42rem;
+
+        span{
+            font-size: 2rem;
+            color: #00853E;
+        }
+
+        .title{
+            font-size: 4rem;
+            color: #fff;
+            margin-top: .5rem;
+        }
+
+        p{
+            font-size: 1.5rem;
+            color: #aaa;
+            padding: 1rem 0;
+            line-height: 2rem;
+        }
+
+        .box-container{
+            display: flex;
+            flex-wrap: wrap;
+            gap: 2rem;
+            margin-top: 2rem;
+
+            .box{
+                flex: 1 1 20rem;
+
+                h3{
+                    font-size: 2rem;
+                    color: #fff;
+
+                    i{
+                        padding-right: 1.5rem;
+                        color: #00853E;
+                    }
+                }
+            }
+        }
+    }
+}
+
+.about{
+    gap: 3rem;
+
+    .image{
+        margin-top: 5rem;
+    }
+
+    .content .title{
+        font-size: 3rem;
+    }
+}
+
+.events .box-container{
+    .image{
+        position: relative;
+        left: 5%;
+        margin-bottom: 1.25rem;
+        img{
+            height: 90%;
+            width: 90%;
+            object-fit: cover;
+        }
     }
 }
 
